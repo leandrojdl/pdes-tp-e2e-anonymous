@@ -7,9 +7,8 @@ describe('Home', () => {
   it('Entrando a la Revolución Industrial', () => {
     cy.visit(url);
     cy.contains('Revolución Industrial');
-    cy.contains('Máquinas');
-    cy.contains('Edición');
-    cy.contains('Ganancias');
-    cy.contains('Detalles');
+    cy.contains('Ingreso al juego');
+    cy.get('input').first().focus().type('jon');
+    cy.get('button').first().contains('Ingresar');
   });
 });

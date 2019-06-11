@@ -3,6 +3,7 @@
 # E2E :: Grupo Anonymous :: PDeS
 
 * [Repositorio Principal](https://github.com/PracticaDS/pdes-tp-anonymous)
+* [Repositorio Load Testing](https://github.com/PracticaDS/pdes-tp-load-testing-anonymous)
 * [Dashboard Cypress.io](https://dashboard.cypress.io/#/projects/zvkzd5/runs)
 
 ## Installing & Testing
