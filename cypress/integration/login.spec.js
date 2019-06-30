@@ -29,7 +29,7 @@ describe('Login test', () => {
       .should('have.value', user);
   });
 
-  it('Send a new user and enter your profile', () => {
+  it('Send a user and enter your profile', () => {
     cy.get('button').click();
     cy.url().should('eq', `${url}${user}`);
   });
