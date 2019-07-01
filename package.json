@@ -14,8 +14,11 @@
     "eslint-plugin-import": "^2.17.3"
   },
   "scripts": {
+    "compose:up": "sh ./compose-up.sh",
+    "compose:stop": "sh ./compose-stop.sh",
     "cypress:open": "yarn run cypress open",
     "cypress:record": "yarn run cypress run --record",
+    "cypress:run": "yarn run cypress run",
     "lint": "eslint cypress --ext .js"
   },
   "eslintConfig": {}

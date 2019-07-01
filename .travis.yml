@@ -4,7 +4,6 @@ node_js:
 addons:
   apt:
     packages:
-      # Ubuntu 16+ does not install this dependency by default, so we need to install it ourselves
       - libgconf-2-4
 
 cache: yarn
@@ -12,6 +11,12 @@ cache: yarn
 install:
   - yarn add ci
 
-script:
+before_script:
   - yarn lint
+  - yarn compose:up
+
+script:
   - yarn cypress:record --env host=$SITE --key $CYPRESS_KEY
+
+after_script:
+  - yarn compose:stop
