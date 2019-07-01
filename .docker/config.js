@@ -1,6 +1,6 @@
 var ENV_API = {
   PROTOCOL: 'http',
-  HOST: 'api',
+  HOST: 'localhost',
   PORT: '8080',
 };
   

@@ -2,6 +2,7 @@
 
 set -e
 
+SITE="${SITE:-http://localhost:8000}"
 cd .docker
 docker-compose pull
 docker-compose up -d

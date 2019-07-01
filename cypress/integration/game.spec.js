@@ -7,7 +7,10 @@ describe('Game test', () => {
     user = 'Ricardo';
     gameName = 'Juego nuevo';
 
-    cy.visit(`${url}${user}`);
+    cy.visit(`${url}`);
+    cy.get('input').type(user);
+    cy.contains('Ingresar').click();
+    cy.url().should('eq', `${url}${user}`);
     cy.contains('Crear').click();
     cy.get('input').type(gameName);
     cy.contains('Ingresar').click();

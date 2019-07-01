@@ -7,7 +7,7 @@ describe('Login test', () => {
     cy.visit(url);
   });
 
-  it('Enter into Revolucion industrial and this have all elements', () => {
+  it('Enter into Revolución industrial and this have all elements', () => {
     cy.contains('Revolución Industrial');
     cy.contains('Ingreso al juego');
     cy.contains('Ingresar');
