@@ -17,10 +17,10 @@ describe('Game test', () => {
     cy.contains('►').click();
   });
 
-  after(() => {
-    cy.visit(`${url}${user}`);
-    cy.contains('☒').click();
-  });
+  // after(() => {
+  //   cy.visit(`${url}${user}`);
+  //   cy.contains('☒').click();
+  // });
 
   it('The game contains all the elements', () => {
     cy.contains('Revolución Industrial');
@@ -85,18 +85,18 @@ describe('Game test', () => {
     cy.get('td>div>img').click();
   });
 
-  it('Touch the back button and go back to the user profile', () => {
-    cy.contains('◀').click();
-    cy.url().should('eq', `${url}${user}`);
-  });
+  // it('Touch the back button and go back to the user profile', () => {
+  //   cy.contains('◀').click();
+  //   cy.url().should('eq', `${url}${user}`);
+  // });
 
-  it('Enter in the game. Put a machine in the table. Save the game. Then, go back to the profile and check the games', () => {
-    cy.get('tbody>tr').eq(1).contains('►').click();
-    cy.get('img').eq(1).click();
-    cy.get('div .empty').eq(0).click();
-    cy.contains('Guardar').click();
-    cy.contains('◀').click();
-    cy.get('table tr').should('have.length', 2);
-    cy.get('table').contains('td', 1);
-  });
+  // it('Enter in the game. Put a machine in the table. Save the game. Then, go back to the profile and check the games', () => {
+  //   cy.get('tbody>tr').eq(1).contains('►').click();
+  //   cy.get('img').eq(1).click();
+  //   cy.get('div .empty').eq(0).click();
+  //   cy.contains('Guardar').click();
+  //   cy.contains('◀').click();
+  //   cy.get('table tr').should('have.length', 2);
+  //   cy.get('table').contains('td', 1);
+  // });
 });
