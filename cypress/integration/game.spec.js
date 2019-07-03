@@ -90,7 +90,8 @@ describe('Game test', () => {
   //   cy.url().should('eq', `${url}${user}`);
   // });
 
-  // it('Enter in the game. Put a machine in the table. Save the game. Then, go back to the profile and check the games', () => {
+  // it('Enter in the game. Put a machine in the table. Save the game. Then,
+  // go back to the profile and check the games', () => {
   //   cy.get('tbody>tr').eq(1).contains('►').click();
   //   cy.get('img').eq(1).click();
   //   cy.get('div .empty').eq(0).click();
